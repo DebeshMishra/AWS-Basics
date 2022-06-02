@@ -43,8 +43,8 @@ public class Main
     static {
         // Your accesskey and secretkey
         AWS_CREDENTIALS = new BasicAWSCredentials(
-                "AKIAR2FYKC34HHPTDNHK",
-                "EK0rrGTBVJK/OsgPa1zV/+qpfPZTTOrRM9ZgeqqI"
+                "",
+                ""
         );
     }
     
@@ -56,7 +56,7 @@ public class Main
                 .withMinCount(1)
                 .withMaxCount(1)
                 .withKeyName("debeshaws")						//Enter your key pair name
-                .withSecurityGroupIds("sg-024a97e0e7db9abba"); 	//Enter your security group id here
+                .withSecurityGroupIds(""); 	//Enter your security group id here
  
         RunInstancesResult runInstancesResult = ec2Client.runInstances(runInstancesRequest);
  
